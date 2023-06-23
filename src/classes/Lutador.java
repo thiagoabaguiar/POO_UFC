@@ -46,35 +46,37 @@ public class Lutador {
     }
 
     public void setPeso(float peso) {
-        
+
         this.peso = peso;
-        
-        String categoria = "";
 
-        if (peso <= 60) {
-            
-            categoria = "Peso Leve";
-            
-        } else if (peso > 60 && peso <= 80) {
-            
-            categoria = "Peso Médio";
-            
-        } else {
-            
-            categoria = "Peso Pesado";
-            
-        }
+        setCategoria(this.peso);
 
-        setCategoria(categoria);
-        
     }
 
     public String getCategoria() {
         return this.categoria;
     }
 
-    public void setCategoria(String categoria) {
-        this.categoria = categoria;
+    private void setCategoria(float peso) {
+
+        if (peso >= 52.2 && peso <= 70.3) {
+
+            this.categoria = "Peso Leve";
+
+        } else if (peso > 70.3 && peso <= 83.9) {
+
+            this.categoria = "Peso Médio";
+
+        } else if (peso > 83.9 && peso <= 120.2) {
+
+            this.categoria = "Peso Pesado";
+
+        } else {
+            
+            this.categoria = "Peso inválido. Sem categoria";
+            
+        }
+
     }
 
     public int getVitorias() {
