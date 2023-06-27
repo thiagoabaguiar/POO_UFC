@@ -121,7 +121,7 @@ public class Lutador {
     public String apresentar() {
         String apresentacao;
         
-        apresentacao = this.getNome() + " " + " do(a) " +
+        apresentacao = this.getNome() + " do(a) " +
                 this.getNacionalidade() + " com " + this.getIdade() + " anos, " +
                 this.getAltura() + " de altura e " + this.getPeso() + "kg, " + 
                 "lutando pela categoria " + this.getCategoria() + " com " +

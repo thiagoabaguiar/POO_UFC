@@ -1,5 +1,8 @@
 package classes;
 
+import classes.Luta;
+import classes.Lutador;
+
 /**
  * @author Thiago Aguiar
  */
