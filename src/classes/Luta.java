@@ -10,7 +10,7 @@ public class Luta {
     // ATRIBUTOS
     private Lutador desafiado;
     private Lutador desafiante;
-    private int rounds;
+    private int rounds;    
     private boolean aprovada;
 
     // CONSTRUTOR
@@ -115,6 +115,7 @@ public class Luta {
         }
         
         return vencedor;
+
         
     }
     
